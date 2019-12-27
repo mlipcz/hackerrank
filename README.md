@@ -28,3 +28,6 @@ Observations:
   * a raising sequence of starting values 
   * a descending sequence of ending values
 * Each number arrives im the data structure once as a starting value, once as an ending value. It can get removed only once from each of those roles.
+
+Major implementation factors:
+* We need a list that allows merging and trimming in constant time. There's a class java.util.LinkedList, rarely used because of costly access to specific inner elements, but it hides its Node inner class. What is worse - when asked to merge another LinkedList, it converts it to an array first, every collection gets converted to an array actually - it takes linear time. For that reason I implemented LinkedListMati consisting of LinkedListMatiNode's. It reminded me of all good times in 90's when I had to implement every time similar structures in Pascal from scratch at Olympic Programming Contents.
