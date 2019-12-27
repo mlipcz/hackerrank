@@ -25,6 +25,6 @@ Almost sorted intervals: 1; 3; 2; 5; 4; 1,3; 1,3,2,5; 2,5.
 
 Observations:
 * We always have:
-** a raising sequence of starting values 
-** a descending sequence of ending values
+  * a raising sequence of starting values 
+  * a descending sequence of ending values
 * Each number arrives im the data structure once as a starting value, once as an ending value. It can get removed only once from each of those roles.
