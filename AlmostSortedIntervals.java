@@ -86,6 +86,8 @@ public class AlmostSortedIntervals {
 
         @Override
         public String toString() {
+            if (li.isEmpty())
+                return "D{val=" + val + "}";
             StringBuilder sb = new StringBuilder();
             LinkedListMatiNode<?> n = li.first;
             while (n != null) {
